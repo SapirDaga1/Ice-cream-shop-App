@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activityLast"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape"
+    android:padding="10dp"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/conclution_hint"
+        android:textSize="50sp"
+        android:fontFamily="@font/courgetteregular"
+        android:gravity="center"
+        android:textColor="@color/pink"
+        android:id="@+id/orderConclusion">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fullName_hint"
+        android:layout_below="@+id/orderConclusion"
+        android:gravity="start"
+        android:textSize="25sp"
+        android:fontFamily="@font/courgetteregular"
+        android:id="@+id/orderName"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/address_hint"
+        android:layout_below="@+id/orderName"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:textSize="25sp"
+        android:fontFamily="@font/courgetteregular"
+        android:id="@+id/orderAdress"
+        >
+
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/PhoneNumberHint"
+        android:layout_below="@+id/orderAdress"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:textSize="25sp"
+        android:fontFamily="@font/courgetteregular"
+        android:id="@+id/phoneNumber"
+        >
+
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/total_price_hint"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:textSize="25sp"
+        android:fontFamily="@font/courgetteregular"
+        android:id="@+id/orderToalPrice"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ice_cream_anim"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/orderToalPrice"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_rawRes="@raw/icecream"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Thank_you_hint"
+        android:layout_below="@+id/ice_cream_anim"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/pink"
+        android:gravity="center|bottom"
+        android:textSize="50sp"
+        android:fontFamily="@font/courgetteregular"
+        android:id="@+id/thankyou"
+        />
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thankyou"
+        android:backgroundTint="@color/pink"
+        android:layout_marginEnd="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/exit_hint"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Ice Cream Shop</string>
+    <string name="welcome_hint">Welcome</string>
+    <string name="order_title">What would you like to order?</string>
+    <string name="balls_amount_hint">How many flavours do you want ?</string>
+    <string name="error_balls_num_hint">ERROR, you must choose at least one flavour</string>
+    <string name="halfKg_hing">0.5 Kg - 45 ₪  </string>
+    <string name="oneKg_hint">1 Kg - 75 ₪ </string>
+
+    <string name="chocolate_hint">Chocolate</string>
+    <string name="vanilla">Vanilla</string>
+    <string name="pistachio_hint">Pistachio</string>
+    <string name="vanillaCookies_hint">Vanilla Cookies</string>
+    <string name="mango_hint">Mango</string>
+    <string name="strawberry_hint">Strawberry</string>
+
+    <string name="Flavours">Flavours</string>
+    <string name="current_price">Price to pay is</string>
+    <string name="extra_hint">Extras</string>
+    <string name="candis_hint">Candies - 3 ₪</string>
+    <string name="chocolate_sauce_hint">Chocolate sauce - 3 ₪</string>
+    <string name="salty_bagel_hint">Salty Bagel sauce - 4 ₪</string>
+    <string name="whipped_cream_hint">Whipped Cream - 2 ₪</string>
+    <string name="fullName_hint">"Full Name "</string>
+    <string name="address_hint">"Address "</string>
+    <string name="accepted_hint">Your order accepted!</string>
+    <string name="delivery_btn_hint">Delivery</string>
+    <string name="selfPickup_hint">Self-PickUp</string>
+    <string name="del_pick_rb_hint">Would you like delivery or self-pickUp?</string>
+    <string name="submitbtn_hint">SEND</string>
+    <string name="choose_flavour_hint">Choose flavour</string>
+    <string name="orderType_hint">"Order Type "</string>
+    <string name="conclution_hint">Your order</string>
+    <string name="Thank_you_hint">Thank you</string>
+    <string name="exit_hint">Exit</string>
+    <string name="ok_btn_hint">OK</string>
+    <string name="alertMessageHint">Thank you for your order ! Enjoy your meal.</string>
+    <string name="finishAlertBtnHint">Finish</string>
+    <string name="moveToOrderHint">Order Details</string>
+    <string name="PhoneNumberHint">Phone number</string>
+    <string name="Error_weight_hint">Please choose weight first</string>
+    <string name="Error_fill_flavour">Please fill in number of flavours</string>
+    <string name="wellcome_hint">Wellcom!</string>
+    <string name="Error_sent_order">at least one of the fileds are empty</string>
+    <string name="Error_delivery_hint">Please choose delivery or self pick-up</string>
+    <string name="no_address_hint">none - self pick up</string>
+    <string name="too_much_flavour_hint">Too much flavours- try again</string>
+    <string name="total_price_hint">Total price</string>
+    <string name="error_length_phone_hint">Error, phone number should be 10 digits</string>
+
+</resources>

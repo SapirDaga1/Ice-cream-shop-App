@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:screenOrientation="portrait">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+       android:scrollbarStyle="insideOverlay"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarFadeDuration="5000">
+
+        <LinearLayout
+            android:id="@+id/mainLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/secondLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:fontFamily="@font/courgetteregular"
+                    android:gravity="center"
+                    android:text="@string/order_title"
+                    android:textColor="@color/light_blue"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:id="@+id/groupradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/halfkg_rb"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radiobtnselector"
+                        android:drawableTop="@drawable/halfkilobox"
+                        android:fontFamily="@font/courgetteregular"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/halfKg_hing"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/onekg_rb"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/courgetteregular"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radiobtnselector"
+                        android:drawableTop="@drawable/kilobox"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/oneKg_hint"
+                        android:textSize="12sp"
+                        />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/numOfflavourEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:fontFamily="@font/courgetteregular"
+                        android:hint="@string/balls_amount_hint"
+                        android:layout_marginHorizontal="20dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@drawable/text_field_background"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/okBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="@color/pink"
+                        android:layout_gravity="center"
+                        android:text="@android:string/ok"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/spinnerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/checkbox_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:gravity="start"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/candy_cb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/courgetteregular"
+                        android:onClick="selectItem"
+                        android:text="@string/candis_hint" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_candies"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="10dp">
+                    <CheckBox
+                        android:id="@+id/chocolate_extra"
+                        android:layout_width="191dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/courgetteregular"
+                        android:onClick="selectItem"
+                        android:text="@string/chocolate_sauce_hint">
+                    </CheckBox>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_chocolate_sauce"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="10dp">
+                    <CheckBox
+                        android:id="@+id/saltyBagle_cb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/courgetteregular"
+                        android:onClick="selectItem"
+                        android:saveEnabled="true"
+                        android:text="@string/salty_bagel_hint">
+                    </CheckBox>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_bagle_sauce"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="10dp">
+                    <CheckBox
+                        android:id="@+id/whippedCream_cb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/courgetteregular"
+                        android:onClick="selectItem"
+                        android:text="@string/whipped_cream_hint">
+                    </CheckBox>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_whipped_cream"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/priceToPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/courgetteregular"
+                android:text="@string/current_price"
+                android:textColor="@color/purple_700"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderTotalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/purple_700"
+                android:fontFamily="@font/courgetteregular"
+                android:layout_marginTop="10dp"
+                android:textSize="23sp"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/courgetteregular"
+                android:text="@string/del_pick_rb_hint"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/delivery_pickup_RB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/deliveryRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/courgetteregular"
+                    android:gravity="start"
+                    android:text="@string/delivery_btn_hint" />
+                <RadioButton
+                    android:id="@+id/selfpickupRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/courgetteregular"
+                    android:gravity="start"
+                    android:text="@string/selfPickup_hint" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/addressET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/courgetteregular"
+                android:hint="@string/address_hint"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/text_field_background"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/fullNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/courgetteregular"
+                android:hint="@string/fullName_hint"
+                android:textColor="@color/black"
+                android:background="@drawable/text_field_background"
+                android:textSize="20sp"
+                android:visibility="gone" />
+            <EditText
+                android:id="@+id/phoneNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/courgetteregular"
+                android:hint="@string/PhoneNumberHint"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:background="@drawable/text_field_background"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/submitbtn_hint"
+                android:textColor="@color/pink" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

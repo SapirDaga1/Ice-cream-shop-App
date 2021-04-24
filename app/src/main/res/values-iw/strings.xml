@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">חנות גלידה</string>
+    <string name="welcome_hint">ברוכים הבאים</string>
+    <string name="order_title">מה תרצה להזמין?</string>
+    <string name="balls_amount_hint">כמה טעמים תרצה?</string>
+    <string name="error_balls_num_hint">שים לב! יש לבחור לפחות טעם אחד</string>
+    <string name="halfKg_hing">חצי קילו - 45 ₪ </string>
+    <string name="oneKg_hint">קילו - 75 ₪</string>
+    <string name="Flavours" tools:ignore="ExtraTranslation">טעמים </string>
+
+    <string name="chocolate_hint">שוקולד</string>
+    <string name="vanilla">וניל</string>
+    <string name="pistachio_hint">פיסטוק</string>
+    <string name="vanillaCookies_hint">וניל עוגיות</string>
+    <string name="mango_hint">מנגו</string>
+    <string name="strawberry_hint">תות</string>
+
+    <string name="current_price">המחיר הנוכחי לתשלום</string>
+    <string name="extra_hint">תוספות</string>
+    <string name="candis_hint">סוכריות - 3 ₪</string>
+    <string name="chocolate_sauce_hint">רוטב שוקולד - 3 ₪</string>
+    <string name="salty_bagel_hint">רוטב בייגלה מלוח - 4 ₪</string>
+    <string name="whipped_cream_hint">קצפת - 2 ₪</string>
+    <string name="fullName_hint">"שם מלא  "</string>
+    <string name="address_hint">"כתובת  "</string>
+    <string name="accepted_hint">ההזמנה נקלטה בהצלחה</string>
+    <string name="delivery_btn_hint">משלוח</string>
+    <string name="selfPickup_hint">איסוף עצמי</string>
+    <string name="del_pick_rb_hint">האם תרצה משלוח או איסוף עצמי ?</string>
+    <string name="submitbtn_hint">שלח</string>
+    <string name="choose_flavour_hint">בחר טעם</string>
+    <string name="orderType_hint">"אופן איסוף "</string>
+    <string name="conclution_hint">הזמנתך</string>
+    <string name="Thank_you_hint">תודה</string>
+    <string name="exit_hint">צא</string>
+    <string name="ok_btn_hint">"שלח "</string>
+    <string name="alertMessageHint">"תודה על הזמנתך ! בתיאבון "</string>
+    <string name="finishAlertBtnHint">סיים</string>
+    <string name="moveToOrderHint">פרטי הזמנה</string>
+    <string name="PhoneNumberHint">"מספר טלפון "</string>
+    <string name="Error_weight_hint">"אנא בחר משקל תחילה "</string>
+    <string name="Error_fill_flavour">אנא בחר מספר טעמים</string>
+    <string name="wellcome_hint">"ברוכים הבאים "</string>
+    <string name="Error_sent_order">שים לב,יש למלא את כל פרטי ההזמנה</string>
+    <string name="Error_delivery_hint">אנא בחר אופן קבלת ההזמנה</string>
+    <string name="no_address_hint">אין- איסוף עצמי</string>
+    <string name="too_much_flavour_hint">יותר מידי טעמים- נסה שוב</string>
+    <string name="total_price_hint">מחיר לתשלום</string>
+    <string name="error_length_phone_hint">שים לב, מספר פלאפון צריך להכיל  10 ספרות</string>
+
+</resources>
